@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     public bool player1Start = true;
+    public Vector2 resetPosition;
     
     public Vector2 speed;
     
@@ -17,14 +18,8 @@ public class BallController : MonoBehaviour
         rig.velocity = speed;
     }
 
-    void Update()
+    public void ResetBall()
     {
-
-    }
-
-    private void RestartBall()
-    {
-        rig.velocity = new Vector2(0, 0);
-        transform.position = new Vector2(0, 0);
+        transform.position = new Vector3 (resetPosition.x, resetPosition.y, 2);
     }
 }
