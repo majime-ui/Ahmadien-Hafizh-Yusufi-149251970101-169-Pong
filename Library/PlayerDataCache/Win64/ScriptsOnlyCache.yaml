@@ -4,7 +4,9 @@ ScriptsOnlyBuild:
     - BallController
     - GoalController
     - MainMenuController
+    - PUSpeedUpController
     - PaddleController
+    - PowerUpManager
     - ScoreController
     - ScoreManager
     Unity.Rider.Editor.dll:
@@ -50,25 +52,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1810}
+      Script: {instanceID: 1814}
     - Class: 114
-      Script: {instanceID: 2090}
+      Script: {instanceID: 2094}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2446}
     - Class: 114
-      Script: {instanceID: 2580}
+      Script: {instanceID: 2584}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 3036}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3134}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3492}
     - Class: 114
-      Script: {instanceID: 4096}
+      Script: {instanceID: 3582}
+    - Class: 114
+      Script: {instanceID: 4002}
+    - Class: 114
+      Script: {instanceID: 4104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -107,21 +113,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1490}
     - Class: 114
-      Script: {instanceID: 2090}
+      Script: {instanceID: 2094}
     - Class: 114
-      Script: {instanceID: 2442}
+      Script: {instanceID: 2446}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2580}
+      Script: {instanceID: 2584}
     - Class: 114
-      Script: {instanceID: 2784}
+      Script: {instanceID: 2788}
     - Class: 114
-      Script: {instanceID: 3004}
+      Script: {instanceID: 3008}
     - Class: 114
-      Script: {instanceID: 3108}
+      Script: {instanceID: 3114}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -345,6 +351,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: f4aec6c659d2ecd7a734826684ad6398
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PowerUpManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -513,6 +525,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: 43de55e234550683a90d5bec22429142
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PUSpeedUpController
+  - hash:
+      serializedVersion: 2
       Hash: 523ce309f50d9eee6a8fc0e2f86c9c97
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
@@ -617,5 +635,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: E:/Program/Unity/Project/Ahmadien Hafizh Yusufi - 149251970101-169
-    - Pong/Build/Ahmadien Hafizh Yusufi - 149251970101-169 - Pong.exe
+  playerPath: C:/Users/USER/Desktop/Build/Ahmadien Hafizh Yusufi - 149251970101-169
+    - Pong.exe
