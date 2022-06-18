@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PaddleController : MonoBehaviour
 {
-    public int speed;
+    private float speedAwal;
+    public float speed;
 
     public KeyCode upKey;
     public KeyCode downKey;
@@ -13,13 +14,15 @@ public class PaddleController : MonoBehaviour
 
     private void Start()
     {
+        speedAwal = speed;
         rig = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
         Vector2 movement = GetInput();
         MoveObject(movement);
+
     }
 
     private Vector2 GetInput()
@@ -39,4 +42,38 @@ public class PaddleController : MonoBehaviour
     {
         rig.velocity = movement;
     }
-}
+
+    public void ActivePUEnlargePaddle()
+    {
+        gameObject.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y * 2);
+        StartCoroutine(EnlargePaddleTimer());
+    }
+
+    public void DeactivePUEnlargePaddle()
+    {
+        gameObject.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y / 2);
+    }
+
+    private IEnumerator EnlargePaddleTimer()
+    {
+        yield return new WaitForSeconds(5f);
+        DeactivePUEnlargePaddle();
+    }
+
+    public void ActivePUSpeedUpPaddle(float magnitude)
+    {
+        speed *= magnitude;
+        StartCoroutine(SpeedUpTimer(magnitude));
+    }
+
+    public void DeactivePUSpeedUpPaddle(float magnitude)
+    {
+        speed /= magnitude;
+    }
+
+    private IEnumerator SpeedUpTimer(float magnitude)
+    {
+        yield return new WaitForSeconds(5f);
+        DeactivePUSpeedUpPaddle(magnitude);
+    }
+}    

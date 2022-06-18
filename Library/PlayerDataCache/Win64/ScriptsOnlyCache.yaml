@@ -4,7 +4,9 @@ ScriptsOnlyBuild:
     - BallController
     - GoalController
     - MainMenuController
+    - PUEnlargePaddle
     - PUSpeedUpController
+    - PUSpeedUpPaddle
     - PaddleController
     - PowerUpManager
     - ScoreController
@@ -24,6 +26,57 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/Credit.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1488}
+    - Class: 114
+      Script: {instanceID: 2092}
+    - Class: 114
+      Script: {instanceID: 2446}
+    - Class: 114
+      Script: {instanceID: 2490}
+    - Class: 114
+      Script: {instanceID: 2584}
+    - Class: 114
+      Script: {instanceID: 2788}
+    - Class: 114
+      Script: {instanceID: 3008}
+    - Class: 114
+      Script: {instanceID: 3114}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Game.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -52,11 +105,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1814}
+      Script: {instanceID: 1440}
     - Class: 114
-      Script: {instanceID: 2094}
+      Script: {instanceID: 1488}
+    - Class: 114
+      Script: {instanceID: 1812}
+    - Class: 114
+      Script: {instanceID: 2092}
+    - Class: 114
+      Script: {instanceID: 2266}
     - Class: 114
       Script: {instanceID: 2446}
+    - Class: 114
+      Script: {instanceID: 2490}
     - Class: 114
       Script: {instanceID: 2584}
     - Class: 114
@@ -65,6 +126,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3008}
     - Class: 114
       Script: {instanceID: 3036}
+    - Class: 114
+      Script: {instanceID: 3114}
     - Class: 114
       Script: {instanceID: 3134}
     - Class: 114
@@ -113,9 +176,9 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1490}
+      Script: {instanceID: 1488}
     - Class: 114
-      Script: {instanceID: 2094}
+      Script: {instanceID: 2092}
     - Class: 114
       Script: {instanceID: 2446}
     - Class: 114
@@ -145,6 +208,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: c3b293ca02ec48c2aca201354bdb9c61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PUSpeedUpPaddle
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -247,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 32c3b48132c3d5ee5aa615786e7fad36
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PUEnlargePaddle
   - hash:
       serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
@@ -435,7 +510,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 8de20f0c44e8e5df758d410351530b22
+      Hash: 2ddccf0b8daca6c34a34b343ee0ca331
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PaddleController
@@ -525,7 +600,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 43de55e234550683a90d5bec22429142
+      Hash: fe897d8154b10d1bdfd6ad1f4211bb77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PUSpeedUpController
@@ -635,5 +710,6 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Main Menu.unity
   - Assets/Scenes/Game.unity
+  - Assets/Scenes/Credit.unity
   playerPath: C:/Users/USER/Desktop/Build/Ahmadien Hafizh Yusufi - 149251970101-169
     - Pong.exe

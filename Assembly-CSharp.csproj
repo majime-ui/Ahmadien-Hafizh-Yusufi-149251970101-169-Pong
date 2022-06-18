@@ -36,7 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\PUSpeedUpPaddle.cs" />
      <Compile Include="Assets\Script\GoalController.cs" />
+     <Compile Include="Assets\Script\PUEnlargePaddle.cs" />
      <Compile Include="Assets\Script\MainMenuController.cs" />
      <Compile Include="Assets\Script\PowerUpManager.cs" />
      <Compile Include="Assets\Script\ScoreController.cs" />

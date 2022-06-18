@@ -5,12 +5,12 @@ using UnityEngine;
 public class PUSpeedUpController : MonoBehaviour
 {
     public PowerUpManager manager;
+    public BallController ballControl;
     public Collider2D ball;
-    public float magnitude;
-    
+    public float magnitude;    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision == ball)
+        if (collision == ball)
         {
             ball.GetComponent<BallController>().ActivePUSpeedUP(magnitude);
             manager.RemovePowerUp(gameObject);

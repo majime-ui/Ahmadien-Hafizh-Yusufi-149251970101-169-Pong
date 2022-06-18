@@ -23,13 +23,7 @@ public class PowerUpManager : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer > spawnInterval)
-        {
-            GenerateRandomPowerUp();
-            timer -= spawnInterval;
-        }
+        Timer();
     }
 
     public void GenerateRandomPowerUp()
@@ -71,6 +65,17 @@ public class PowerUpManager : MonoBehaviour
         while(powerUpList.Count > 0)
         {
             RemovePowerUp(powerUpList[0]);
+        }
+    }
+
+    public void Timer()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > spawnInterval)
+        {
+            GenerateRandomPowerUp();
+            timer -= spawnInterval;
         }
     }
 }

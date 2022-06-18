@@ -14,4 +14,17 @@ public class MainMenuController : MonoBehaviour
     {
         Debug.Log("Created by 149251970101-169-Ahmadien Hafizh Yusufi");
     }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void CreditMenu()
+    {
+        SceneManager.LoadScene("Credit");
+        Debug.Log("Ahmadien Hafizh Yusufi");
+        Debug.Log("149251970101-169");
+        Debug.Log("Github  : https://github.com/majime-ui?tab=repositories");
+    }
 }
